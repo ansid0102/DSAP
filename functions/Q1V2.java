@@ -1,15 +1,15 @@
 import java.util.*;
 
-public class Q1{
+public class Q1V2{
 	static int largest(int a,int b,int c){
-		if(a>b && a>c){
-			return a;
+		int max = a;
+		if(max<b){
+			max =b;
 		}
-		if(b>c && b>a){
-			return b;
-		}else{
-			return c;
+		if(max<c){
+			max = c;
 		}
+		return max;
 	}
 
 	public static void main(String args[]){
